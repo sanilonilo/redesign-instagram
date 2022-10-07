@@ -1,3 +1,3 @@
 Todos os direitos reservados.
 
-#Meramente ilustrativo
+Meramente ilustrativo
