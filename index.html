@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Instagram</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/app.css">
+    <script src="./js/script.js"></script>  
+    <script src="https://kit.fontawesome.com/b153df65d1.js" crossorigin="anonymous"></script>
+</head>
+<body id="app">
+    <section class="feed-container flex">
+        <div class="menu flex column bg-grey-small " id="menu-action">
+            <div class="flex items-center">
+                <img class="logo" src="./assets/images/logo.png" alt="logo">
+                <img class="slogan mt-sm ml-sm" src="./assets/images/slogan.png" alt="slogan">
+            </div>
+            <div class="user-container flex column items-center mt-lg">
+                <div class="avatar-container bg-gradient-accent flex items-center justify-center">
+                    <div class="avatar-border-white">
+                        <img src="./assets/images/tumblr.jpg" alt="avatar" >
+                    </div>
+                </div>
+                <div class="name mt-sm text-bolder ">
+                    <span>Maria Júlia</span>
+                </div>
+                <div class="username text-bold text-grey1">
+                    <span>@mariajuhh</span>
+                </div>
+            </div>
+
+            <div class="info-account mt-lg flex nowrap"></div>
+
+            <div class="nav-container pl-lg pr-lg mt-lg flex column"></div>
+        </div>
+
+
+        <div class="content-box flex column">
+            <div class="slogan-mobile">
+                <img class="slogan" src="./assets/images/slogan.png" alt="slogan">
+            </div>
+            <header class="flex justify-between items-center">
+                <div class="search bg-grey-small pl-md text-white flex nowrap items-center">
+                    <div><i  class="fa fa-search"></i></div>
+                    <div class="ml-sm"><input type="text" placeholder="Pesquisar" onkeyup="search()" onchange="search()" id="search"></div>
+                </div>
+                <div class="actions-top flex nowrap items-center">
+                    <div>
+                        <i class="fa fa-bell-o cursor-pointer icon-action text-grey2 mr-md flex column items-center"><div class="bg-notify target-notification"></div></i>
+                    </div>
+                    <div>
+                        <i class="fa fa-comment-o cursor-pointer icon-action text-grey2 mr-md flex column items-center"><div class="bg-notify target-notification"></div></i>
+                    </div>
+                    <div class="upload"><button class="flex cursor-pointer bg-gradient-accent text-white text-bolder justify-center nowrap items-center"><i class="fa fa-plus"></i> Upload</button></div>
+                    <div class="upload"><button class="bg-gradient-accent  cursor-pointer nowrap text-white mobile-add ml-md mr-md text-bolder "><i class="fa fa-plus"></i></button></div>
+                    <div class="avatar-header cursor-pointer ml-md flex nowrap items-center" onclick="toggleMenu()">
+                        <img src="./assets/images/tumblr.jpg" alt="avatar">
+                        <i class="fa fa-sort-down"></i>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="stories mt-lg flex column">
+                <div class=" text-bolder title-section">Stories</div>
+                <div class="list-stories mt-md flex nowrap" id="list-stories">
+
+                    <div class="my-storie-single mr-sm cursor-pointer">
+                        <img src="./assets/images/tumblr.jpg" alt="my-storie">
+                        <div class="add-storie text-white flex items-center justify-center"><i class="fa fa-plus"></i></div>
+                    </div>
+                                
+                </div>
+            </div>
+
+            <div class="posts mt-md" id="posts">
+                <div class="text-bolder title-section">Feed</div>
+                <div class="posts-box mt-md flex " id="posts-box"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

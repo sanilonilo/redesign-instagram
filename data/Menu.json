@@ -1,0 +1,13 @@
+{
+    "info":["Publica...","Seguidores","Seguindo"],
+    "menu":[
+        {"id":1,"icon":"fa fa-home","label":"Página Inicial"},
+        {"id":2,"icon":"fa fa-search","label":"Pesquisar"},
+        {"id":3,"icon":"fa fa-heart-o","label":"Notificações"},
+        {"id":4,"icon":"fa fa-send-o","label":"Mensagens"},
+        {"id":5,"icon":"fa fa-bookmark-o","label":"Salvos"},
+        {"id":6,"icon":"fa fa-signal","label":"Métricas"},
+        {"id":7,"icon":"fa fa-cog","label":"Configurações"},
+        {"id":8,"icon":"fa fa-sign-out","label":"Sair"}
+    ]
+}
